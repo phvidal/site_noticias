@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../IMAGE/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo{
+    height: 150px;
+    background: url(../IMAGE/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+    /*border: 1px solid red;*/
+}
+
+/*Formatação barra de navegação*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar{
+    font-weight: bold;
+}
+
+#nav-top ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;    
+    border-radius: 10px;
+}
+
+#nav-top ul li{
+    float: left;
+}
+
+#nav-top ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.4em;
+    line-height: 2.1rem;
+    text-decoration: none;
+    color: #fff;
+    background: url(../IMAGE/divisor.png) no-repeat left;
+}
+
+#nav-top ul .primeiro a{
+    background: none;
+    border-radius: 10px 0 0 10px;
+}
+
+#nav-top ul .ultimo a{
+    border-radius: 0 10px 10px 0;
+}
+
+#nav-top ul a:hover{
+    color: #000;
+    
+}
+
+body.home #navbar a#home,
+body.brasil #navbar a#brasil,
+body.internacional #navbar a#internacional,
+body.economia #navbar a#economia,
+body.saude #navbar a#saude,
+body.fotos #navbar a#fotos{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/* Configurando o layout com três colunas */
+
+#conteudo{
+    margin-top: 60px;
+    background: #d4d0d0;
+}
+
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+}
+
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+    
+    
+}
+
+#duas-colunas #primario{
+    width: 555px;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+#secundario{
+    width: 270px;
+    margin: 0 0 20px 15px;
+    float: left;
+}
+
+
+
+
+/*Caixas*/
+.caixa{
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../IMAGE/fundo-caixa.png);
+}
+
+h2{
+    font-size: 1.1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+/* Formatando a lista lateral*/
+
+#lateral ul a{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.efeito-lista{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #294c71;
+    position: relative;
+}
+
+.efeito-lista::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #294c71;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.efeito-lista:hover::after{
+    transform: scaleX(1);
+    clear: both;
+}
+
+
+
+/* estilizando campo e-mail lateral */
+
+#form-email{
+    font-size: .9em;
+    background-color: #fff;
+    
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+  
+}
+input#email{ 
+    width: 160px;
+}
+
+input.submit{
+    width: 80px;
+    margin-top: 2px;
+    padding: 2px;
+    background-color: #de003e;
+    border: 2px solid #de003e;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input.submit:hover{
+    background-color: #b10333;
+    border: 2px solid #b10333;
+    font-weight: bolder;
+}
+
+/* Formatando imagens */
+
+img.imagem-principal,
+img.imagem-secundaria{
+    width: 97%;
+    padding: 2px;
+    border: 3px solid #dfdfdf;
+    margin-top: 5px;
+}
+
+#link-destaque{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#link-destaque:hover{
+    text-decoration: none;
+    padding: 3px;
+    background-color: #294c71;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Formatando os cabeçalhos */
+
+.destaque h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+    background: #b10333;
+    color: #fff;
+}
+
+/* formatando lista de notícias */
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-noticias li a{
+   text-decoration: none;
+   font-size: 0.8em;
+}
+
+#lista-noticias li:hover{
+    background-color: rgba(204, 204, 204, 0.253);
+   
+ }
+
+/* Estilizando o rodapé */
+#container-rodape{
+    clear: both;
+    background-color: #294c71;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    
+}
+
+
+
+/*
+div.box {
+	width: 30px;
+	display: inline-block;
+}*/
