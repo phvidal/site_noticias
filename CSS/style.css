@@ -286,9 +286,13 @@ img.imagem-secundaria{
 }
 
 
+/* Links rodapé */
 
-/*
-div.box {
-	width: 30px;
-	display: inline-block;
-}*/
+.redesocial a{
+    text-decoration: none;
+}
+
+.redesocial a img{
+    width: 30px;
+    margin-top: 5px;
+}
